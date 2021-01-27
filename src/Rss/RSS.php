@@ -86,7 +86,7 @@ class RSS implements RSSInterface
                 '/api/v2/rss/items',
                 [
                     'query' => [
-                        'withData' => $withData
+                        'withData' => $withData?'true':'false'
                     ]
                 ]
             );

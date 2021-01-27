@@ -6,6 +6,7 @@ class Singleton
 {
     private static $instance = null;
     private static $baseURI = 'http://localhost';
+    private static $userAgent = 'Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1)';
 
     public static function getInstance()
     {
@@ -36,5 +37,10 @@ class Singleton
     public function getBaseUri(): string
     {
         return self::$baseURI;
+    }
+
+    public function getUserAgent():string
+    {
+        return self::$userAgent;
     }
 }

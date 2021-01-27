@@ -1,6 +1,6 @@
 <?php
 
-namespace Fatkulnurk\PHPQbitttorrentApi\Log;
+namespace Fatkulnurk\PHPQbittorrentApi\Log;
 
 use FatkulNurK\PHPQbittorrentApi\CollectionInterface;
 

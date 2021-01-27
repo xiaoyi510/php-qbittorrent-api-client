@@ -10,22 +10,29 @@ use Psr\Http\Message\RequestInterface;
 
 class RequestClient
 {
+    public static $client = null;
     public static function make(): ClientInterface
     {
-        $stack = new HandlerStack();
-        $stack->setHandler(new CurlHandler());
-        $stack->push(add_header('Referer', Singleton::getInstance()->getBaseUri()));
-        $client = new Client(
-            [
-                // Base URI is used with relative requests
-                'base_uri' => Singleton::getInstance()->getBaseUri(),
-                // You can set any number of default request options.
-                'timeout'  => 2.0,
-                'handler' => $stack
-            ]
-        );
+//        $stack = new HandlerStack();
+//        $stack->setHandler(new CurlHandler());
+//        $stack->push(add_header('Referer', Singleton::getInstance()->getBaseUri()));
+//        $stack->push(add_header('User-Agent', Singleton::getInstance()->getUserAgent()));
 
-        return $client;
+        if(empty(self::$client)){
+            self::$client = new Client(
+                [
+                    // Base URI is used with relative requests
+                    'base_uri' => Singleton::getInstance()->getBaseUri(),
+                    // You can set any number of default request options.
+                    'timeout'  => 2.0,
+                    //                'handler' => $stack,
+                    'http_errors' => false,
+                    'cookies' => true,
+                ]
+            );
+        }
+
+        return self::$client;
     }
 }
 

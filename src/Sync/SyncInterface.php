@@ -1,6 +1,6 @@
 <?php
 
-namespace Fatkulnurk\PHPQbitttorrentApi\Sync;
+namespace Fatkulnurk\PHPQbittorrentApi\Sync;
 
 use FatkulNurK\PHPQbittorrentApi\CollectionInterface;
 

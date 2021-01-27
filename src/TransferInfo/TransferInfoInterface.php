@@ -1,6 +1,6 @@
 <?php
 
-namespace Fatkulnurk\PHPQbitttorrentApi\TransferInfo;
+namespace Fatkulnurk\PHPQbittorrentApi\TransferInfo;
 
 use FatkulNurK\PHPQbittorrentApi\CollectionInterface;
 

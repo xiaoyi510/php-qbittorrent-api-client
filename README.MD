@@ -7,7 +7,7 @@ PHP QBITTORRENT API is a Qbittorrent application client for managing qbittorrent
 |Name| Information |
 |---|---|
 | Application | QBittorrent |
-| Api version| API v2.5.1 |
+| Api version| API v4.x |
 
 
 ## Help and docs

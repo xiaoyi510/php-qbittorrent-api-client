@@ -6,10 +6,10 @@ use Fatkulnurk\PHPQbittorrentApi\Authentication\AuthenticationInterface;
 use Fatkulnurk\PHPQbittorrentApi\Rss\RSSInterface;
 use Fatkulnurk\PHPQbittorrentApi\Search\SearchInterface;
 use Fatkulnurk\PHPQbittorrentApi\TorrentManagement\TorrentManagementInterface;
-use Fatkulnurk\PHPQbitttorrentApi\Application\ApplicationInterface;
-use Fatkulnurk\PHPQbitttorrentApi\Log\LogInterface;
-use Fatkulnurk\PHPQbitttorrentApi\Sync\SyncInterface;
-use Fatkulnurk\PHPQbitttorrentApi\TransferInfo\TransferInfoInterface;
+use Fatkulnurk\PHPQbittorrentApi\Application\ApplicationInterface;
+use Fatkulnurk\PHPQbittorrentApi\Log\LogInterface;
+use Fatkulnurk\PHPQbittorrentApi\Sync\SyncInterface;
+use Fatkulnurk\PHPQbittorrentApi\TransferInfo\TransferInfoInterface;
 
 /**
  * Interface QbittorrentInterface
